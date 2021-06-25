@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/title_paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Bluetooth device"
+        android:textSize="19dp"
+        android:alpha=".8"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#262626"
+        android:background="@color/colorPrimary"
+        android:padding="15dp"
+        />
+    <ListView android:id="@+id/paired_devices"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stackFromBottom="false"
+        android:layout_weight="1"
+        />
+
+    <TextView
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:id="@+id/connecting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:textSize="11dp"
+        android:gravity="center"
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="If no devices are listed please pair your device
+" />
+
+
+</LinearLayout>

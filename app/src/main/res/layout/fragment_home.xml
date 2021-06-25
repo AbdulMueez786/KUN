@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".Fragments.HomeFragment">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Events"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/header1"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/h_rcv1"
+        android:layout_below="@+id/header1"/>
+
+</RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.7dp"
+    android:background="@android:color/black"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appliances"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:id="@+id/header2"
+        />
+    <ImageView
+        android:id="@+id/connection"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/add"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@android:color/white"
+        android:id="@+id/h_rcv2"
+        android:layout_below="@+id/header2"/>
+
+</RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.7dp"
+    android:background="@android:color/black"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="10dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/mic"
+        app:civ_border_width="4dp"
+        app:civ_shadow="true"
+        app:civ_shadow_radius="20"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        app:civ_shadow_color="@android:color/black"/>
+
+</RelativeLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.7dp"
+    android:background="@android:color/black"/>
+
+</LinearLayout>

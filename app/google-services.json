@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "968928517040",
+    "project_id": "kunfypproject",
+    "storage_bucket": "kunfypproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:968928517040:android:db9c1d05ed1a444efb5475",
+        "android_client_info": {
+          "package_name": "com.example.kunfypproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "968928517040-22u8e4v8ik5q8sdoojc1m71mklaj0avs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRAKiVSkKfRxneY2MF0N7vx81tHAUPUDE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "968928517040-22u8e4v8ik5q8sdoojc1m71mklaj0avs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

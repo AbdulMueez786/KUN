@@ -129,12 +129,7 @@ public class Home extends AppCompatActivity implements TaskBottomSheetDialog.Bot
         }
         return ls2;
     }
-/*
-    private BluetoothSocket createBluetoothSocket(BluetoothDevice device) throws IOException {
 
-        return  device.createRfcommSocketToServiceRecord(BTMODULEUUID);
-    }
-*/
     @Override
     public void onResume() {
         super.onResume();

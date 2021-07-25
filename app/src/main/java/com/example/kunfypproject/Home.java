@@ -109,6 +109,7 @@ public class Home extends AppCompatActivity implements TaskBottomSheetDialog.Bot
         else
             navDrawer.closeDrawer(GravityCompat.END);
     }
+
     @Override
     public void onButtonClicked(String text) { //save this string as a task
         scheduledTasks.add(new ScheduledTask(dateSelected,text));
@@ -140,7 +141,6 @@ public class Home extends AppCompatActivity implements TaskBottomSheetDialog.Bot
     public void onPause()
     {
         super.onPause();
-
     }
 
 }

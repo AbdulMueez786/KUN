@@ -52,6 +52,7 @@ public class ScheduleFragment extends Fragment  {
         scheduledTasks.add(new ScheduledTask("13/4/2021","Turn on fan at 1:30"));
         scheduledTasks.add(new ScheduledTask("18/4/2021","Close door at 10:30"));
 
+
         CalendarView cv = v.findViewById(R.id.calendarView);
 
 
@@ -70,8 +71,8 @@ public class ScheduleFragment extends Fragment  {
             }
 
         });
-        v.findViewById(R.id.add_new_task);
 
+        v.findViewById(R.id.add_new_task);
         return v;
     }
 

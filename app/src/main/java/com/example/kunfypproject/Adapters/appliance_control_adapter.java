@@ -1,4 +1,4 @@
-package com.example.kunfypproject;
+package com.example.kunfypproject.Adapters;
 
 import android.content.Context;
 import android.net.Uri;
@@ -10,12 +10,14 @@ import android.widget.ImageView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.kunfypproject.Appliance;
 import com.example.kunfypproject.Fragments.HomeFragment;
+import com.example.kunfypproject.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class MyRVAdapter1 extends RecyclerView.Adapter<com.example.kunfypproject.MyRVAdapter1.MyViewHolder1> {
+public class appliance_control_adapter extends RecyclerView.Adapter<appliance_control_adapter.MyViewHolder1> {
 
     private List<Appliance> ls1;
     private Context c;
@@ -29,9 +31,9 @@ public class MyRVAdapter1 extends RecyclerView.Adapter<com.example.kunfypproject
     private boolean Door_status=false;
     private boolean Window_status=false;
 
-    public MyRVAdapter1(Context c, List<Appliance> ls1,HomeFragment.ConnectedThread mConnectedThread1,
-                        HomeFragment.ConnectedThread mConnectedThread2,HomeFragment.ConnectedThread mConnectedThread3
-            ,HomeFragment.ConnectedThread mConnectedThread4){
+    public appliance_control_adapter(Context c, List<Appliance> ls1, HomeFragment.ConnectedThread mConnectedThread1,
+                                     HomeFragment.ConnectedThread mConnectedThread2, HomeFragment.ConnectedThread mConnectedThread3
+            , HomeFragment.ConnectedThread mConnectedThread4){
         this.c = c;
         this.ls1 = ls1;
         this.mConnectedThread1=mConnectedThread1;

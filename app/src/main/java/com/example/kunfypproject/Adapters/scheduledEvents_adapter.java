@@ -1,4 +1,4 @@
-package com.example.kunfypproject;
+package com.example.kunfypproject.Adapters;
 
 import android.content.Context;
 import android.net.Uri;
@@ -11,14 +11,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.kunfypproject.R;
+import com.example.kunfypproject.Schedule;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class MyRVAdapter extends RecyclerView.Adapter<com.example.kunfypproject.MyRVAdapter.MyViewHolder> {
+public class scheduledEvents_adapter extends RecyclerView.Adapter<scheduledEvents_adapter.MyViewHolder> {
     private List<Schedule> ls;
     private Context c;
-    public MyRVAdapter(Context c, List<Schedule> ls){
+    public scheduledEvents_adapter(Context c, List<Schedule> ls){
         this.c = c;
         this.ls = ls;
     }

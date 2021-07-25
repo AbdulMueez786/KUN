@@ -77,7 +77,6 @@ public class CalendarActivity extends AppCompatActivity implements TaskBottomShe
     public void onButtonClicked(String text) { //save this string as a task
         scheduledTasks.add(new ScheduledTask(dateSelected,text));
         List<ScheduledTask> ls = showTasksForToday(dateSelected, scheduledTasks); //gets tasks only for that date
-
         ScheduledTaskAdapter adapter = new ScheduledTaskAdapter(ls,CalendarActivity.this);
         RecyclerView.LayoutManager lm = new LinearLayoutManager(CalendarActivity.this);
         rv.setLayoutManager(lm);

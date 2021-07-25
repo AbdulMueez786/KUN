@@ -12,13 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DeviceListActivity"></activity>
-        <activity android:name=".CalendarActivity" />
-        <activity android:name=".Home" />
-        <activity android:name=".Login" />
-        <activity android:name=".NewAppliance" />
-        <activity android:name=".SignUp" />
-        <activity android:name=".SplashScreen">
+        <activity android:name=".Activities.DeviceList"></activity>
+        <activity android:name=".Activities.Home" />
+        <activity android:name=".Activities.Login" />
+        <activity android:name=".Models.NewAppliance" />
+        <activity android:name=".Activities.SignUp" />
+        <activity android:name=".Activities.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

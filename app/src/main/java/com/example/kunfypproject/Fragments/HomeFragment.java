@@ -20,12 +20,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.kunfypproject.Appliance;
-import com.example.kunfypproject.Adapters.scheduledEvents_adapter;
-import com.example.kunfypproject.Adapters.appliance_control_adapter;
-import com.example.kunfypproject.NewAppliance;
+import com.example.kunfypproject.Models.Appliance;
+import com.example.kunfypproject.Adapters.home_events_adapter;
+import com.example.kunfypproject.Adapters.home_appliance_adapter;
+import com.example.kunfypproject.Models.NewAppliance;
 import com.example.kunfypproject.R;
-import com.example.kunfypproject.Schedule;
+import com.example.kunfypproject.Models.Schedule;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -38,8 +38,8 @@ public class HomeFragment extends Fragment {
     private RecyclerView rcv1,rcv2;
     List<Schedule> ls;
     List<Appliance> ls1;
-    private scheduledEvents_adapter scheduledEventsadapter;
-    private appliance_control_adapter appliancecontroladapter;
+    private home_events_adapter scheduledEventsadapter;
+    private home_appliance_adapter appliancecontroladapter;
     ImageView connection;
 
     Handler bluetoothIn;
@@ -148,7 +148,7 @@ public class HomeFragment extends Fragment {
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         rcv1.setLayoutManager(layoutManager);
         rcv1.setItemAnimator(new DefaultItemAnimator());
-        scheduledEventsadapter = new scheduledEvents_adapter(getActivity(),ls);
+        scheduledEventsadapter = new home_events_adapter(getActivity(),ls);
         rcv1.setAdapter(scheduledEventsadapter);
 
         return  v;
@@ -208,7 +208,7 @@ public class HomeFragment extends Fragment {
         LinearLayoutManager layoutManager1 = new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         rcv2.setLayoutManager(layoutManager1);
         rcv2.setItemAnimator(new DefaultItemAnimator());
-        appliancecontroladapter = new appliance_control_adapter(getActivity(),ls1,mConnectedThread1,mConnectedThread2
+        appliancecontroladapter = new home_appliance_adapter(getActivity(),ls1,mConnectedThread1,mConnectedThread2
                 ,mConnectedThread3,mConnectedThread4);
         rcv2.setAdapter(appliancecontroladapter);
         //I send a character when resuming.beginning transmission to check device is connected

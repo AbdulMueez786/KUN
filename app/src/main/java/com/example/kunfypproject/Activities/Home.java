@@ -1,4 +1,4 @@
-package com.example.kunfypproject;
+package com.example.kunfypproject.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,33 +8,23 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
-import android.bluetooth.BluetoothSocket;
-import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.provider.Settings;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.WindowManager;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import com.example.kunfypproject.Fragments.HomeFragment;
 import com.example.kunfypproject.Fragments.ScheduleFragment;
 import com.example.kunfypproject.Fragments.SecurityFragment;
+import com.example.kunfypproject.R;
+import com.example.kunfypproject.Models.ScheduledTask;
+import com.example.kunfypproject.Adapters.scheduledEvent_adapter;
+import com.example.kunfypproject.Fragments.TaskBottomSheetDialog;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
-public class Home extends AppCompatActivity implements TaskBottomSheetDialog.BottomSheetListener{
+public class Home extends AppCompatActivity implements TaskBottomSheetDialog.BottomSheetListener {
 
     List<ScheduledTask> scheduledTasks;
     private String dateSelected="";
@@ -114,7 +104,7 @@ public class Home extends AppCompatActivity implements TaskBottomSheetDialog.Bot
     public void onButtonClicked(String text) { //save this string as a task
         scheduledTasks.add(new ScheduledTask(dateSelected,text));
         List<ScheduledTask> ls = showTasksForToday(dateSelected, scheduledTasks); //gets tasks only for that date
-        ScheduledTaskAdapter adapter = new ScheduledTaskAdapter(ls,this);
+        scheduledEvent_adapter adapter = new scheduledEvent_adapter(ls,this);
         RecyclerView.LayoutManager lm = new LinearLayoutManager(this);
         rv.setLayoutManager(lm);
         rv.setAdapter(adapter);

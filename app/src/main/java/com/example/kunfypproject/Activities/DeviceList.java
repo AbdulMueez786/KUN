@@ -1,6 +1,4 @@
-package com.example.kunfypproject;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.kunfypproject.Activities;
 
 import android.bluetooth.BluetoothAdapter;
 import android.os.Bundle;
@@ -8,22 +6,19 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.TextView;
 import android.app.Activity;
-import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.content.Intent;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.kunfypproject.R;
 
 import java.util.Set;
 
-public class DeviceListActivity extends Activity {
+public class DeviceList extends Activity {
 
     // Debugging for LOGCAT
     private static final String TAG = "DeviceListActivity";
@@ -95,7 +90,7 @@ public class DeviceListActivity extends Activity {
             String address = info.substring(info.length() - 17);
 
             // Make an intent to start next activity while taking an extra which is the MAC address.
-            Intent i = new Intent(DeviceListActivity.this, Home.class);
+            Intent i = new Intent(DeviceList.this, Home.class);
             i.putExtra(EXTRA_DEVICE_ADDRESS, address);
             startActivity(i);
 

@@ -13,12 +13,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.CalendarView;
 
-import com.example.kunfypproject.CalendarActivity;
-import com.example.kunfypproject.Home;
 import com.example.kunfypproject.R;
-import com.example.kunfypproject.ScheduledTask;
-import com.example.kunfypproject.ScheduledTaskAdapter;
-import com.example.kunfypproject.TaskBottomSheetDialog;
+import com.example.kunfypproject.Models.ScheduledTask;
+import com.example.kunfypproject.Adapters.scheduledEvent_adapter;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -63,7 +60,7 @@ public class ScheduleFragment extends Fragment  {
                 String dateSelected = i2+"/"+i1+"/"+i;
                 List<ScheduledTask> ls = showTasksForToday(dateSelected, scheduledTasks); //gets tasks only for that date
 
-                ScheduledTaskAdapter adapter = new ScheduledTaskAdapter(ls, getActivity());
+                scheduledEvent_adapter adapter = new scheduledEvent_adapter(ls, getActivity());
                 RecyclerView.LayoutManager lm = new LinearLayoutManager(getActivity());
                 rv.setLayoutManager(lm);
                 rv.setAdapter(adapter);

@@ -1,4 +1,4 @@
-package com.example.kunfypproject;
+package com.example.kunfypproject.Models;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+
+import com.example.kunfypproject.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -12,15 +12,15 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.kunfypproject.R;
-import com.example.kunfypproject.Schedule;
+import com.example.kunfypproject.Models.Schedule;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class scheduledEvents_adapter extends RecyclerView.Adapter<scheduledEvents_adapter.MyViewHolder> {
+public class home_events_adapter extends RecyclerView.Adapter<home_events_adapter.MyViewHolder> {
     private List<Schedule> ls;
     private Context c;
-    public scheduledEvents_adapter(Context c, List<Schedule> ls){
+    public home_events_adapter(Context c, List<Schedule> ls){
         this.c = c;
         this.ls = ls;
     }

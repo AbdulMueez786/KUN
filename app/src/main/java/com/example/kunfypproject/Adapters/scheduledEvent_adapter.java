@@ -1,4 +1,4 @@
-package com.example.kunfypproject;
+package com.example.kunfypproject.Adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,13 +9,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.kunfypproject.R;
+import com.example.kunfypproject.Models.ScheduledTask;
+
 import java.util.List;
 
 
-public class ScheduledTaskAdapter extends RecyclerView.Adapter<com.example.kunfypproject.ScheduledTaskAdapter.MyViewHolder> {
+public class scheduledEvent_adapter extends RecyclerView.Adapter<scheduledEvent_adapter.MyViewHolder> {
     List<ScheduledTask> ls;
     Context c;
-    public ScheduledTaskAdapter(List<ScheduledTask> ls, Context c) {
+    public scheduledEvent_adapter(List<ScheduledTask> ls, Context c) {
         this.c=c;
         this.ls=ls;
     }

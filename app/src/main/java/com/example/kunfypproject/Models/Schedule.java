@@ -1,4 +1,4 @@
-package com.example.kunfypproject;
+package com.example.kunfypproject.Models;
 
 public class Schedule {
     String title, logo;

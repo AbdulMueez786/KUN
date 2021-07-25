@@ -1,4 +1,4 @@
-package com.example.kunfypproject;
+package com.example.kunfypproject.Activities;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.kunfypproject.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -18,9 +19,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
-import java.util.HashMap;
 
 
 public class Login extends AppCompatActivity {
@@ -42,7 +40,7 @@ public class Login extends AppCompatActivity {
 
         if(login_firebaseUser!=null){
             System.out.println("Naviagte");
-            Intent intent = new Intent(Login.this, DeviceListActivity.class);
+            Intent intent = new Intent(Login.this, DeviceList.class);
             startActivity(intent);
             finish();
         }

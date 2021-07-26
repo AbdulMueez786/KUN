@@ -82,7 +82,7 @@ public class Login extends AppCompatActivity {
                                             //startActivity(intent);
                                             finish();
                                         } else {
-                                            Intent intent = new Intent(Login.this, Home.class);
+                                            Intent intent = new Intent(Login.this, DeviceList.class);
                                             startActivity(intent);
                                             finish();
                                         }

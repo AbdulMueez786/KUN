@@ -7,6 +7,10 @@ Instructions:
 use android Studio as an IDE.
 use Android Mobile phone as an emulator.
 
+Note:
+Arduino_Code folder contain Arduino Code
+NLP_Model_code folder contain model code which we have trained so that our application can work on voice command.
+
 
 
 

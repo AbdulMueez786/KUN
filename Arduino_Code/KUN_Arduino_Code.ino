@@ -1,7 +1,7 @@
 #include <SoftwareSerial.h>
-
-SoftwareSerial Blue(2, 3);
 #include<Servo.h>
+SoftwareSerial Blue(2, 3);
+
 Servo doorMotor;
 Servo windowMotor;
 
@@ -13,21 +13,26 @@ int door_portNo=8;// door connected
 int window_portNo=9; // window connected
 
 void setup()
-{  
-pinMode(LED, OUTPUT); 
+{
+//Setting up the Connection
 
+pinMode(LED, OUTPUT);
 pinMode(FAN, OUTPUT);
-
-digitalWrite(LED, LOW);
-
-digitalWrite(FAN, LOW);
-
 doorMotor.attach(door_portNo);
-
 windowMotor.attach(window_portNo);
 
-Serial.begin(9600);
-Blue.begin(9600); 
+
+// setting up LED ON
+digitalWrite(LED, LOW);
+
+//setting up FAN ON
+digitalWrite(FAN, LOW);
+
+
+Serial.begin(9600);// Serial Communication
+
+Blue.begin(9600);  //  Bluetooth
+
 }
 void loop()
 {
@@ -36,7 +41,7 @@ void loop()
  if(Blue.available()>0) 
 {
   data = Blue.readString();
- Serial.println(data);
+
 if(data=="<Light_ON>"){
   
    digitalWrite(LED,HIGH); 

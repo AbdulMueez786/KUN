@@ -11,7 +11,6 @@ import android.widget.Spinner;
 
 import com.example.kunfypproject.R;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

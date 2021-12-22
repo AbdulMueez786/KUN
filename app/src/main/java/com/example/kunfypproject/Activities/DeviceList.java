@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 import com.example.kunfypproject.R;
 
+import java.io.IOException;
 import java.util.Set;
 
 public class DeviceList extends Activity {
@@ -25,7 +26,6 @@ public class DeviceList extends Activity {
     private static final boolean D = true;
 
     // declare button for launching website and textview for connection status
-    Button tlbutton;
     TextView textView1;
 
     // EXTRA string to send on to mainactivity
@@ -41,13 +41,11 @@ public class DeviceList extends Activity {
         setContentView(R.layout.activity_device_list);
     }
 
-
-
     @Override
     public void onResume()
     {
+
         super.onResume();
-        //***************
         checkBTState();
 
         textView1 = (TextView) findViewById(R.id.connecting);
@@ -96,7 +94,16 @@ public class DeviceList extends Activity {
 
         }
     };
+    //@Override
+    //public void onPause(){
+        //super.onPause();
+        //try
+        //{
+            //Don't leave Bluetooth sockets open when leaving activity
 
+        //} catch (IOException e2) {
+            //insert code to deal with this
+        //}
     private void checkBTState() {
         // Check device has Bluetooth and that it is turned on
         mBtAdapter=BluetoothAdapter.getDefaultAdapter(); // CHECK THIS OUT THAT IT WORKS!!!
@@ -107,6 +114,7 @@ public class DeviceList extends Activity {
                 Log.d(TAG, "...Bluetooth ON...");
             } else {
                 //Prompt user to turn on Bluetooth
+
                 Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
                 startActivityForResult(enableBtIntent, 1);
             }

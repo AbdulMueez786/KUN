@@ -1,26 +1,39 @@
 package com.example.kunfypproject.Models;
 
 public class Schedule {
-    String title, logo;
-
-    public Schedule(String title, String logo) {
-        this.title = title;
-        this.logo = logo;
+    private String date, name, status;
+    public Schedule(){
+        this.name = "";
+        this.status = "";
+        this.date="";
+    }
+    public Schedule(String name, String status,String date) {
+        this.name = name;
+        this.status = status;
+        this.date=date;
     }
 
-    public String getTitle() {
-        return title;
+    public void setDate(String date) {
+        this.date = date;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public String getDate() {
+        return date;
     }
 
-    public String getLogo() {
-        return logo;
+    public String getName() {
+        return name;
     }
 
-    public void setLogo(String logo) {
-        this.logo = logo;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
     }
 }

@@ -123,7 +123,7 @@ public class home_appliance_adapter extends RecyclerView.Adapter<home_appliance_
         ImageView app_image;
         public MyViewHolder1(@NonNull View itemView) {
             super(itemView);
-            app_image = itemView.findViewById(R.id.app_image);
+
         }
     }
 }

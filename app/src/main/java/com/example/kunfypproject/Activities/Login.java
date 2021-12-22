@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.kunfypproject.Fragments.HomeFragment;
 import com.example.kunfypproject.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
@@ -39,8 +40,8 @@ public class Login extends AppCompatActivity {
         login_firebaseUser=FirebaseAuth.getInstance().getCurrentUser();
 
         if(login_firebaseUser!=null){
-            System.out.println("Naviagte");
-            Intent intent = new Intent(Login.this, DeviceList.class);
+
+            Intent intent = new Intent(Login.this, HomeActivity.class);
             startActivity(intent);
             finish();
         }
@@ -68,6 +69,7 @@ public class Login extends AppCompatActivity {
         login_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 if(checkDataEntered()) {
                     final String email = login_email.getEditText().getText().toString();
                     final String password = login_Password.getEditText().getText().toString();
@@ -77,9 +79,10 @@ public class Login extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
 
-                                        if (email.trim().matches("admin@gmail.com")) {
-                                            //Intent intent = new Intent(Login.this, AdminHome.class);
-                                            //startActivity(intent);
+                                        if (email.trim().matches("police@gmail.com")) {
+
+                                            // for police officer
+
                                             finish();
                                         } else {
                                             Intent intent = new Intent(Login.this, DeviceList.class);

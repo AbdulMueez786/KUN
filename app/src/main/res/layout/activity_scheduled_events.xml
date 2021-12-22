@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Activities.ScheduledEvents">
+
+        <TextView
+            android:id="@+id/month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageButton
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:backgroundTint="#FFFFFF"
+            android:layout_toLeftOf="@id/month"
+            android:src="@drawable/ic_baseline_arrow_left_24"
+            />
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@id/month"
+            android:src="@drawable/ic_baseline_arrow_right_24"
+            android:backgroundTint="#FFFFFF"/>
+
+        <com.github.sundeepk.compactcalendarview.CompactCalendarView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/compactcalendar_view"
+            android:layout_width="fill_parent"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_marginBottom="100dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            app:compactCalendarTargetHeight="250dp"
+            app:compactCalendarTextSize="12sp"
+            app:compactCalendarBackgroundColor="#FFFFFF"
+            app:compactCalendarTextColor="#000000"
+            app:compactCalendarCurrentSelectedDayBackgroundColor="#14DCD5"
+            app:compactCalendarCurrentDayBackgroundColor="#FFFFFF"
+            app:compactCalendarMultiEventIndicatorColor="#000000"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#DCDCDC"
+            android:layout_marginTop="300dp" />
+
+        <Button
+            android:id="@+id/new_event"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/circle"
+
+            android:text="+" />
+
+    </RelativeLayout>

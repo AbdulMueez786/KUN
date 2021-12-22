@@ -47,7 +47,10 @@ public class SignUp extends AppCompatActivity {
             }
         });
 
-        Signup_button.setOnClickListener(new View.OnClickListener() {
+        
+
+
+/*        Signup_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
@@ -62,19 +65,12 @@ public class SignUp extends AppCompatActivity {
                                 public void onComplete(@NonNull Task<AuthResult> task) {
                                     if (task.isSuccessful()) {
 
-
-
                                         Toast toast = Toast.makeText(SignUp.this, "Successfully created", Toast.LENGTH_LONG); // initiate the Toast with context, message and duration for the Toast
                                         toast.show(); // display the Toast
                                         USER = FirebaseAuth.getInstance().getCurrentUser();
                                         String id = USER.getUid();
-
-
-                                        //Intent intent = new Intent(SignUp.this, create_profile.class);
-                                        //startActivity(intent);
                                         finish();
                                     } else {
-                                        // If sign in fails, display a message to the user.
                                         Toast toast = Toast.makeText(SignUp.this, "Already account on this email", Toast.LENGTH_LONG); // initiate the Toast with context, message and duration for the Toast
                                         toast.show(); // display the Toast
                                     }
@@ -90,7 +86,7 @@ public class SignUp extends AppCompatActivity {
                             });
                 }
             }
-        });
+        });*/
     }
     //Varification Checks
     private boolean isEmpty(com.google.android.material.textfield.TextInputLayout obj) {

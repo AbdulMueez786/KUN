@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KunFypProject</string>
+    <string name="app_name">KUN</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="none_paired">No devices have been paired</string>

@@ -1,0 +1,745 @@
+Sentence,Intent
+بتی جلا دو,turn on light
+بتی اون کردو,turn on light
+لائٹ جلا دو,turn on light
+لائٹ اون کردو,turn on light
+بتی جلا,turn on light
+بتی اون کر,turn on light
+لائٹ جلا,turn on light
+لائٹ اون کر,turn on light
+بتی جلانا,turn on light
+بتی اون کرنا,turn on light
+لائٹ جلانا,turn on light
+لائٹ اون کرنا,turn on light
+بتی جلا دیں,turn on light
+بتی اون کردیں,turn on light
+لائٹ جلا دیں ,turn on light
+لائٹ اون کردیں ,turn on light
+بتی جلا دیجئیے ,turn on light
+بتی اون دیجئیے ,turn on light
+لائٹ جلا دیجئیے,turn on light
+لائٹ اون کردیجئیے,turn on light
+بتی جل جا,turn on light
+بتی اون ہوجا,turn on light
+لائٹ جل جا,turn on light
+لائٹ اون ہوجا,turn on light
+بتی جل جائیں ,turn on light
+بتی اون ہوجائیں ,turn on light
+لائٹ جل جائیں,turn on light
+لائٹ اون ہوجائیں,turn on light
+بتی جل جائیے,turn on light
+بتی اون ہوجائیے,turn on light
+لائٹ جل جائیے,turn on light
+لائٹ اون ہوجائیے,turn on light
+بتی جلا دینا,turn on light
+بتی اون کردینا,turn on light
+لائٹ جلا دینا,turn on light
+لائٹ اون کردینا,turn on light
+بتی جل,turn on light
+بتی اون,turn on light
+لائٹ جل,turn on light
+لائٹ اون,turn on light
+جلا دو بتی,turn on light
+اون کردو بتی,turn on light
+جلا دو لائٹ,turn on light
+اون کردو لائٹ,turn on light
+جلا بتی,turn on light
+اون کر بتی,turn on light
+جلا لائٹ,turn on light
+اون کر لائٹ,turn on light
+جلانا بتی,turn on light
+اون کرنا بتی,turn on light
+جلانا لائٹ,turn on light
+اون کرنا لائٹ,turn on light
+جلا دیں بتی,turn on light
+اون کردیں بتی,turn on light
+جلا دیں لائٹ,turn on light
+اون کردیں لائٹ,turn on light
+جلا دیجئیے بتی,turn on light
+اون دیجئیے بتی,turn on light
+جلا دیجئیے لائٹ,turn on light
+اون کردیجئیے لائٹ,turn on light
+جل جا بتی,turn on light
+اون ہوجا بتی,turn on light
+جل جا لائٹ,turn on light
+اون ہوجا لائٹ,turn on light
+جل جائیں بتی,turn on light
+اون ہوجائیں بتی,turn on light
+جل جائیں لائٹ,turn on light
+اون ہوجائیں لائٹ,turn on light
+جل جائیے بتی,turn on light
+اون ہوجائیے بتی,turn on light
+جل جائیے لائٹ,turn on light
+اون ہوجائیے لائٹ,turn on light
+جلا دینا بتی,turn on light
+اون کردینا بتی,turn on light
+جلا دینا لائٹ,turn on light
+اون کردینا لائٹ,turn on light
+جل بتی,turn on light
+اون بتی,turn on light
+جل لائٹ,turn on light
+اون لائٹ,turn on light
+جل بتی,turn on light
+اون ہوجائیں لائٹ,turn on light
+جل جائیے بتی,turn on light
+اون ہوجا بتی,turn on light
+جلا بتی,turn on light
+جلا دیجئیے لائٹ,turn on light
+جلانا بتی,turn on light
+جلا دو بتی,turn on light
+اون کردیں بتی,turn on light
+جلا دیجئیے بتی,turn on light
+جل جائیں بتی,turn on light
+اون کر لائٹ,turn on light
+جل لائٹ,turn on light
+جل جا بتی,turn on light
+اون ہوجائیں بتی,turn on light
+اون دیجئیے بتی,turn on light
+جلا دیں لائٹ,turn on light
+جلا دینا لائٹ,turn on light
+اون کرنا بتی,turn on light
+اون کردیں لائٹ,turn on light
+اون بتی,turn on light
+اون ہوجا لائٹ,turn on light
+اون کردینا بتی,turn on light
+اون لائٹ,turn on light
+جلا دیں بتی,turn on light
+اون کر بتی,turn on light
+جل جائیں لائٹ,turn on light
+اون کردو لائٹ,turn on light
+جل جا لائٹ,turn on light
+اون کردیجئیے لائٹ,turn on light
+جلا دینا بتی,turn on light
+جلا دو لائٹ,turn on light
+جلانا لائٹ,turn on light
+اون ہوجائیے بتی,turn on light
+جلا لائٹ,turn on light
+اون کردو بتی,turn on light
+اون ہوجائیے لائٹ,turn on light
+جل جائیے لائٹ,turn on light
+اون کردینا لائٹ,turn on light
+اون کرنا لائٹ,turn on light
+بتی بند کردو,turn off light
+بتی اوف کردو,turn off light
+لائٹ بند کردو,turn off light
+لائٹ اوف کردو,turn off light
+بتی بند کر ,turn off light
+بتی اوف کر ,turn off light
+لائٹ بند کر ,turn off light
+لائٹ اوف کر ,turn off light
+بتی بند کرنا ,turn off light
+بتی اوف کرنا ,turn off light
+لائٹ بند کرنا ,turn off light
+لائٹ اوف کرنا ,turn off light
+بتی بند کردیں ,turn off light
+بتی اوف کردیں ,turn off light
+لائٹ بند کردیں ,turn off light
+لائٹ اوف کردیں ,turn off light
+بتی بند کردیجئیے ,turn off light
+بتی اوف دیجئیے ,turn off light
+لائٹ بند کردیجئیے ,turn off light
+لائٹ اوف کردیجئیے ,turn off light
+بتی بند ہوجا ,turn off light
+بتی اوف ہوجا ,turn off light
+لائٹ بند ہوجا ,turn off light
+لائٹ اوف ہوجا ,turn off light
+بتی بند ہوجائیں ,turn off light
+بتی اوف ہوجائیں ,turn off light
+لائٹ بند ہوجائیں ,turn off light
+لائٹ اوف ہوجائیں ,turn off light
+بتی بند ہوجائیے ,turn off light
+بتی اوف ہوجائیے ,turn off light
+لائٹ بند ہوجائیے ,turn off light
+لائٹ اوف ہوجائیے ,turn off light
+بتی بند کردینا ,turn off light
+بتی اوف کردینا ,turn off light
+لائٹ بند کردینا ,turn off light
+لائٹ اوف کردینا ,turn off light
+بتی بند ,turn off light
+بتی اوف ,turn off light
+لائٹ بند ,turn off light
+لائٹ اوف ,turn off light
+بند کردو بتی,turn off light
+اوف کردو بتی,turn off light
+بند کردو لائٹ,turn off light
+اوف کردو لائٹ,turn off light
+بند کر بتی,turn off light
+اوف کر بتی,turn off light
+بند کر لائٹ,turn off light
+اوف کر لائٹ,turn off light
+بند کرنا بتی,turn off light
+اوف کرنا بتی,turn off light
+بند کرنا لائٹ,turn off light
+اوف کرنا لائٹ,turn off light
+بند کردیں بتی,turn off light
+اوف کردیں بتی,turn off light
+بند کردیں لائٹ,turn off light
+اوف کردیں لائٹ,turn off light
+بند کردیجئیے بتی,turn off light
+اوف دیجئیے بتی,turn off light
+بند کردیجئیے لائٹ,turn off light
+اوف کردیجئیے لائٹ,turn off light
+بند ہوجا بتی,turn off light
+اوف ہوجا بتی,turn off light
+بند ہوجا لائٹ,turn off light
+اوف ہوجا لائٹ,turn off light
+بند ہوجائیں بتی,turn off light
+اوف ہوجائیں بتی,turn off light
+بند ہوجائیں لائٹ,turn off light
+اوف ہوجائیں لائٹ,turn off light
+بند ہوجائیے بتی,turn off light
+اوف ہوجائیے بتی,turn off light
+بند ہوجائیے لائٹ,turn off light
+اوف ہوجائیے لائٹ,turn off light
+بند کردینا بتی,turn off light
+اوف کردینا بتی,turn off light
+بند کردینا لائٹ,turn off light
+اوف کردینا لائٹ,turn off light
+بند بتی,turn off light
+اوف بتی,turn off light
+بند لائٹ,turn off light
+اوف لائٹ,turn off light
+اوف کردینا لائٹ,turn off light
+اوف ہوجا لائٹ,turn off light
+بند کردینا بتی,turn off light
+اوف کردیجئیے لائٹ,turn off light
+بند کرنا لائٹ,turn off light
+اوف کردیں بتی,turn off light
+اوف کردو بتی,turn off light
+اوف کردیں لائٹ,turn off light
+بند ہوجائیے لائٹ,turn off light
+بند کردو لائٹ,turn off light
+بند کردیں لائٹ,turn off light
+بند کردو بتی,turn off light
+بند ہوجائیں لائٹ,turn off light
+اوف دیجئیے بتی,turn off light
+بند کردینا لائٹ,turn off light
+اوف ہوجائیے بتی,turn off light
+اوف بتی,turn off light
+بند کردیں بتی,turn off light
+بند ہوجا لائٹ,turn off light
+بند ہوجا بتی,turn off light
+اوف ہوجائیے لائٹ,turn off light
+اوف کرنا لائٹ,turn off light
+اوف کر لائٹ,turn off light
+بند لائٹ,turn off light
+اوف کردو لائٹ,turn off light
+اوف ہوجا بتی,turn off light
+اوف کر بتی,turn off light
+بند بتی,turn off light
+بند کردیجئیے لائٹ,turn off light
+بند کردیجئیے بتی,turn off light
+اوف ہوجائیں لائٹ,turn off light
+اوف کرنا بتی,turn off light
+بند ہوجائیے بتی,turn off light
+بند کرنا بتی,turn off light
+اوف لائٹ,turn off light
+اوف کردینا بتی,turn off light
+بند ہوجائیں بتی,turn off light
+اوف ہوجائیں بتی,turn off light
+بند کر بتی,turn off light
+بند کر لائٹ,turn off light
+پنکھا چلا دو,turn on fan
+پنکھا اون کردو,turn on fan
+فین چلا دو,turn on fan
+فین اون کردو,turn on fan
+پنکھا چلا ,turn on fan
+پنکھا اون کر ,turn on fan
+فین چلا ,turn on fan
+فین اون کر ,turn on fan
+پنکھا جلانا ,turn on fan
+پنکھا اون کرنا ,turn on fan
+فین جلانا ,turn on fan
+فین اون کرنا ,turn on fan
+پنکھا چلا دیں ,turn on fan
+پنکھا اون کردیں ,turn on fan
+فین چلا دیں ,turn on fan
+فین اون کردیں ,turn on fan
+پنکھا چلا دیجئیے ,turn on fan
+پنکھا اون دیجئیے ,turn on fan
+فین چلا دیجئیے ,turn on fan
+فین اون کردیجئیے ,turn on fan
+پنکھا چل جا ,turn on fan
+پنکھا اون ہوجا ,turn on fan
+فین چل جا ,turn on fan
+فین اون ہوجا ,turn on fan
+پنکھا چل جائیں ,turn on fan
+پنکھا اون ہوجائیں ,turn on fan
+فین چل جائیں ,turn on fan
+فین اون ہوجائیں ,turn on fan
+پنکھا چل جائیے ,turn on fan
+پنکھا اون ہوجائیے ,turn on fan
+فین چل جائیے ,turn on fan
+فین اون ہوجائیے ,turn on fan
+پنکھا چلا دینا ,turn on fan
+پنکھا اون کردینا ,turn on fan
+فین چلا دینا ,turn on fan
+فین اون کردینا ,turn on fan
+پنکھا چل ,turn on fan
+پنکھا اون ,turn on fan
+فین چل ,turn on fan
+فین اون ,turn on fan
+چلا دو پنکھا,turn on fan
+اون کردو پنکھا,turn on fan
+چلا دو فین,turn on fan
+اون کردو فین,turn on fan
+چلا پنکھا,turn on fan
+اون کر پنکھا,turn on fan
+چلا فین,turn on fan
+اون کر فین,turn on fan
+جلانا پنکھا,turn on fan
+اون کرنا پنکھا,turn on fan
+جلانا فین,turn on fan
+اون کرنا فین,turn on fan
+چلا دیں پنکھا,turn on fan
+اون کردیں پنکھا,turn on fan
+چلا دیں فین,turn on fan
+اون کردیں فین,turn on fan
+چلا دیجئیے پنکھا,turn on fan
+اون دیجئیے پنکھا,turn on fan
+چلا دیجئیے فین,turn on fan
+اون کردیجئیے فین,turn on fan
+چل جا پنکھا,turn on fan
+اون ہوجا پنکھا,turn on fan
+چل جا فین,turn on fan
+اون ہوجا فین,turn on fan
+چل جائیں پنکھا,turn on fan
+اون ہوجائیں پنکھا,turn on fan
+چل جائیں فین,turn on fan
+اون ہوجائیں فین,turn on fan
+چل جائیے پنکھا,turn on fan
+اون ہوجائیے پنکھا,turn on fan
+چل جائیے فین,turn on fan
+اون ہوجائیے فین,turn on fan
+چلا دینا پنکھا,turn on fan
+اون کردینا پنکھا,turn on fan
+چلا دینا فین,turn on fan
+اون کردینا فین,turn on fan
+چل پنکھا,turn on fan
+اون پنکھا,turn on fan
+چل فین,turn on fan
+اون فین,turn on fan
+اون کرنا پنکھا,turn on fan
+اون کر پنکھا,turn on fan
+اون ہوجا فین,turn on fan
+چل فین,turn on fan
+چلا پنکھا,turn on fan
+جلانا فین,turn on fan
+اون کردیں پنکھا,turn on fan
+اون کردو فین,turn on fan
+اون کردینا پنکھا,turn on fan
+چلا دینا فین,turn on fan
+چل جائیے پنکھا,turn on fan
+اون ہوجا پنکھا,turn on fan
+چل جا پنکھا,turn on fan
+چلا دینا پنکھا,turn on fan
+چلا دیجئیے فین,turn on fan
+چل پنکھا,turn on fan
+اون کردیجئیے فین,turn on fan
+اون ہوجائیں فین,turn on fan
+چلا دیں فین,turn on fan
+چل جائیں فین,turn on fan
+اون کردیں فین,turn on fan
+چلا دو پنکھا,turn on fan
+چلا دو فین,turn on fan
+اون کردو پنکھا,turn on fan
+اون دیجئیے پنکھا,turn on fan
+اون ہوجائیے پنکھا,turn on fan
+اون کرنا فین,turn on fan
+چل جائیے فین,turn on fan
+اون ہوجائیے فین,turn on fan
+چل جا فین,turn on fan
+اون ہوجائیں پنکھا,turn on fan
+چلا دیجئیے پنکھا,turn on fan
+چلا دیں پنکھا,turn on fan
+جلانا پنکھا,turn on fan
+اون کر فین,turn on fan
+اون فین,turn on fan
+اون پنکھا,turn on fan
+چلا فین,turn on fan
+اون کردینا فین,turn on fan
+چل جائیں پنکھا,turn on fan
+پنکھا بند کردو,turn off fan
+پنکھا اوف کردو,turn off fan
+فین بند کردو,turn off fan
+فین اوف کردو,turn off fan
+پنکھا بند کر ,turn off fan
+پنکھا اوف کر ,turn off fan
+فین بند کر ,turn off fan
+فین اوف کر ,turn off fan
+پنکھا بند کرنا ,turn off fan
+پنکھا اوف کرنا ,turn off fan
+فین بند کرنا ,turn off fan
+فین اوف کرنا ,turn off fan
+پنکھا بند کردیں ,turn off fan
+پنکھا اوف کردیں ,turn off fan
+فین بند کردیں ,turn off fan
+فین اوف کردیں ,turn off fan
+پنکھا بند کردیجئیے ,turn off fan
+پنکھا اوف دیجئیے ,turn off fan
+فین بند کردیجئیے ,turn off fan
+فین اوف کردیجئیے ,turn off fan
+پنکھا بند ہوجا ,turn off fan
+پنکھا اوف ہوجا ,turn off fan
+فین بند ہوجا ,turn off fan
+فین اوف ہوجا ,turn off fan
+پنکھا بند ہوجائیں ,turn off fan
+پنکھا اوف ہوجائیں ,turn off fan
+فین بند ہوجائیں ,turn off fan
+فین اوف ہوجائیں ,turn off fan
+پنکھا بند ہوجائیے ,turn off fan
+پنکھا اوف ہوجائیے ,turn off fan
+فین بند ہوجائیے ,turn off fan
+فین اوف ہوجائیے ,turn off fan
+پنکھا بند کردینا ,turn off fan
+پنکھا اوف کردینا ,turn off fan
+فین بند کردینا ,turn off fan
+فین اوف کردینا ,turn off fan
+پنکھا بند ,turn off fan
+پنکھا اوف ,turn off fan
+فین بند ,turn off fan
+فین اوف ,turn off fan
+بند کردو پنکھا,turn off fan
+اوف کردو پنکھا,turn off fan
+بند کردو فین,turn off fan
+اوف کردو فین,turn off fan
+بند کر پنکھا,turn off fan
+اوف کر پنکھا,turn off fan
+بند کر فین,turn off fan
+اوف کر فین,turn off fan
+بند کرنا پنکھا,turn off fan
+اوف کرنا پنکھا,turn off fan
+بند کرنا فین,turn off fan
+اوف کرنا فین,turn off fan
+بند کردیں پنکھا,turn off fan
+اوف کردیں پنکھا,turn off fan
+بند کردیں فین,turn off fan
+اوف کردیں فین,turn off fan
+بند کردیجئیے پنکھا,turn off fan
+اوف دیجئیے پنکھا,turn off fan
+بند کردیجئیے فین,turn off fan
+اوف کردیجئیے فین,turn off fan
+بند ہوجا پنکھا,turn off fan
+اوف ہوجا پنکھا,turn off fan
+بند ہوجا فین,turn off fan
+اوف ہوجا فین,turn off fan
+بند ہوجائیں پنکھا,turn off fan
+اوف ہوجائیں پنکھا,turn off fan
+بند ہوجائیں فین,turn off fan
+اوف ہوجائیں فین,turn off fan
+بند ہوجائیے پنکھا,turn off fan
+اوف ہوجائیے پنکھا,turn off fan
+بند ہوجائیے فین,turn off fan
+اوف ہوجائیے فین,turn off fan
+بند کردینا پنکھا,turn off fan
+اوف کردینا پنکھا,turn off fan
+بند کردینا فین,turn off fan
+اوف کردینا فین,turn off fan
+بند پنکھا,turn off fan
+اوف پنکھا,turn off fan
+بند فین,turn off fan
+اوف فین,turn off fan
+اوف ہوجائیے فین,turn off fan
+اوف دیجئیے پنکھا,turn off fan
+اوف فین,turn off fan
+بند ہوجائیں پنکھا,turn off fan
+بند کردو پنکھا,turn off fan
+بند ہوجائیں فین,turn off fan
+اوف کردیں پنکھا,turn off fan
+بند کردیجئیے فین,turn off fan
+اوف کر پنکھا,turn off fan
+بند ہوجا فین,turn off fan
+اوف ہوجا فین,turn off fan
+اوف پنکھا,turn off fan
+اوف ہوجائیے پنکھا,turn off fan
+بند کر فین,turn off fan
+بند ہوجا پنکھا,turn off fan
+اوف کرنا فین,turn off fan
+بند ہوجائیے فین,turn off fan
+بند کرنا فین,turn off fan
+اوف ہوجائیں پنکھا,turn off fan
+بند کر پنکھا,turn off fan
+بند کردیں پنکھا,turn off fan
+بند کردیجئیے پنکھا,turn off fan
+اوف ہوجا پنکھا,turn off fan
+اوف کرنا پنکھا,turn off fan
+اوف کردینا فین,turn off fan
+اوف کر فین,turn off fan
+بند کردینا فین,turn off fan
+بند ہوجائیے پنکھا,turn off fan
+بند کردینا پنکھا,turn off fan
+بند کرنا پنکھا,turn off fan
+بند پنکھا,turn off fan
+اوف کردیں فین,turn off fan
+اوف کردینا پنکھا,turn off fan
+اوف کردیجئیے فین,turn off fan
+بند کردیں فین,turn off fan
+اوف کردو فین,turn off fan
+اوف کردو پنکھا,turn off fan
+اوف ہوجائیں فین,turn off fan
+بند کردو فین,turn off fan
+بند فین,turn off fan
+پنکھا تیز کردو,speed up fan
+پنکھا آہستہ کردو,slow down fan
+فین تیز کردو,speed up fan
+فین آہستہ کردو,slow down fan
+پنکھا تیز کردو ,speed up fan
+پنکھا آہستہ کردو ,slow down fan
+فین تیز کردو ,speed up fan
+فین آہستہ کردو ,slow down fan
+پنکھا تیز کر ,speed up fan
+پنکھا آہستہ کر ,slow down fan
+فین تیز کر ,speed up fan
+فین آہستہ کر ,slow down fan
+پنکھا تیز کرنا ,speed up fan
+پنکھا آہستہ کرنا ,slow down fan
+فین تیز کرنا ,speed up fan
+فین آہستہ کرنا ,slow down fan
+پنکھا تیز کردیں ,speed up fan
+پنکھا آہستہ کردیں ,slow down fan
+فین تیز کردیں ,speed up fan
+فین آہستہ کردیں ,slow down fan
+پنکھا تیز کردیجئیے ,speed up fan
+پنکھا آہستہ دیجئیے ,slow down fan
+فین تیز کردیجئیے ,speed up fan
+فین آہستہ کردیجئیے ,slow down fan
+پنکھا تیز ہوجا ,speed up fan
+پنکھا آہستہ ہوجا ,slow down fan
+فین تیز ہوجا ,speed up fan
+فین آہستہ ہوجا ,slow down fan
+پنکھا تیز ہوجائیں ,speed up fan
+پنکھا آہستہ ہوجائیں ,slow down fan
+فین تیز ہوجائیں ,speed up fan
+فین آہستہ ہوجائیں ,slow down fan
+پنکھا تیز ہوجائیے ,speed up fan
+پنکھا آہستہ ہوجائیے ,slow down fan
+فین تیز ہوجائیے ,speed up fan
+فین آہستہ ہوجائیے ,slow down fan
+پنکھا تیز کردینا ,speed up fan
+پنکھا آہستہ کردینا ,slow down fan
+فین تیز کردینا ,speed up fan
+فین آہستہ کردینا ,slow down fan
+پنکھا تیز ,speed up fan
+پنکھا آہستہ ,slow down fan
+فین تیز ,speed up fan
+فین آہستہ ,slow down fan
+تیز کردو پنکھا,speed up fan
+آہستہ کردو پنکھا,slow down fan
+تیز کردو فین,speed up fan
+آہستہ کردو فین,slow down fan
+تیز کردو پنکھا,speed up fan
+آہستہ کردو پنکھا,slow down fan
+تیز کردو فین,speed up fan
+آہستہ کردو فین,slow down fan
+تیز کر پنکھا,speed up fan
+آہستہ کر پنکھا,slow down fan
+تیز کر فین,speed up fan
+آہستہ کر فین,slow down fan
+تیز کرنا پنکھا,speed up fan
+آہستہ کرنا پنکھا,slow down fan
+تیز کرنا فین,speed up fan
+آہستہ کرنا فین,slow down fan
+تیز کردیں پنکھا,speed up fan
+آہستہ کردیں پنکھا,slow down fan
+تیز کردیں فین,speed up fan
+آہستہ کردیں فین,slow down fan
+تیز کردیجئیے پنکھا,speed up fan
+آہستہ دیجئیے پنکھا,slow down fan
+تیز کردیجئیے فین,speed up fan
+آہستہ کردیجئیے فین,slow down fan
+تیز ہوجا پنکھا,speed up fan
+آہستہ ہوجا پنکھا,slow down fan
+تیز ہوجا فین,speed up fan
+آہستہ ہوجا فین,slow down fan
+تیز ہوجائیں پنکھا,speed up fan
+آہستہ ہوجائیں پنکھا,slow down fan
+تیز ہوجائیں فین,speed up fan
+آہستہ ہوجائیں فین,slow down fan
+تیز ہوجائیے پنکھا,speed up fan
+آہستہ ہوجائیے پنکھا,slow down fan
+تیز ہوجائیے فین,speed up fan
+آہستہ ہوجائیے فین,slow down fan
+تیز کردینا پنکھا,speed up fan
+آہستہ کردینا پنکھا,slow down fan
+تیز کردینا فین,speed up fan
+آہستہ کردینا فین,slow down fan
+تیز پنکھا,speed up fan
+آہستہ پنکھا,slow down fan
+تیز فین,speed up fan
+آہستہ فین,slow down fan
+تیز کردینا فین,speed up fan
+آہستہ ہوجا پنکھا,slow down fan
+آہستہ ہوجا فین,slow down fan
+تیز کردو فین,speed up fan
+آہستہ ہوجائیں فین,slow down fan
+آہستہ کردو پنکھا,slow down fan
+آہستہ کرنا فین,slow down fan
+آہستہ کر فین,slow down fan
+آہستہ کردیں پنکھا,slow down fan
+آہستہ کردینا فین,slow down fan
+تیز کرنا پنکھا,speed up fan
+آہستہ دیجئیے پنکھا,slow down fan
+تیز کردو پنکھا,speed up fan
+آہستہ فین,slow down fan
+تیز ہوجائیں فین,speed up fan
+تیز کردو فین,speed up fan
+تیز کر فین,speed up fan
+تیز کردو پنکھا,speed up fan
+آہستہ ہوجائیے پنکھا,slow down fan
+آہستہ کردیجئیے فین,slow down fan
+آہستہ کرنا پنکھا,slow down fan
+تیز ہوجائیے فین,speed up fan
+تیز کردینا پنکھا,speed up fan
+آہستہ کردینا پنکھا,slow down fan
+تیز کردیں فین,speed up fan
+تیز کر پنکھا,speed up fan
+آہستہ پنکھا,slow down fan
+تیز پنکھا,speed up fan
+تیز کرنا فین,speed up fan
+آہستہ ہوجائیے فین,slow down fan
+آہستہ کردو پنکھا,slow down fan
+آہستہ کردو فین,slow down fan
+تیز ہوجا پنکھا,speed up fan
+تیز کردیجئیے پنکھا,speed up fan
+تیز ہوجا فین,speed up fan
+تیز ہوجائیں پنکھا,speed up fan
+آہستہ کردیں فین,slow down fan
+تیز ہوجائیے پنکھا,speed up fan
+تیز کردیجئیے فین,speed up fan
+آہستہ کردو فین,slow down fan
+تیز فین,speed up fan
+آہستہ کر پنکھا,slow down fan
+آہستہ ہوجائیں پنکھا,slow down fan
+تیز کردیں پنکھا,speed up fan
+دروازہ کھول دو,open door
+دروازہ بند کردو,close door
+دروازہ کھول,open door
+دروازہ بند کر,close door
+دروازہ کھول دے,open door
+دروازہ بند کردے,close door
+دروازہ کھول دیجئیے,open door
+دروازہ بند کردیجئے,close door
+دروازہ کھول دیں,open door
+دروازہ بند کردیں,close door
+دروازہ کھل,open door
+دروازہ بند,close door
+دروازہ کھول دینا,open door
+دروازہ بند کردینا,close door
+دروازہ کھل جا,open door
+دروازہ بند ہوجا,close door
+دروازہ کھل جائیں,open door
+دروازہ بند ہوجائیں,close door
+دروازہ کھل جائیے,open door
+دروازہ بند ہوجائیے,close door
+دروازہ کھل جانا,open door
+دروازہ بند ہوجانا,close door
+کھول دو دروازہ,open door
+بند کردو دروازہ,close door
+کھول دروازہ,open door
+بند کر دروازہ,close door
+کھول دے دروازہ,open door
+بند کردے دروازہ,close door
+کھول دیجئیے دروازہ,open door
+بند کردیجئے دروازہ,close door
+کھول دیں دروازہ,open door
+بند کردیں دروازہ,close door
+کھل دروازہ,open door
+بند دروازہ,close door
+کھول دینا دروازہ,open door
+بند کردینا دروازہ,close door
+کھل جا دروازہ,open door
+بند ہوجا دروازہ,close door
+کھل جائیں دروازہ,open door
+بند ہوجائیں دروازہ,close door
+کھل جائیے دروازہ,open door
+بند ہوجائیے دروازہ,close door
+کھل جانا دروازہ,open door
+بند ہوجانا دروازہ,close door
+بند ہوجا دروازہ,close door
+کھول دینا دروازہ,open door
+کھول دروازہ,open door
+کھل جانا دروازہ,open door
+بند کردیں دروازہ,close door
+بند دروازہ,close door
+بند کردے دروازہ,close door
+کھل دروازہ,open door
+کھل جا دروازہ,open door
+بند کر دروازہ,close door
+کھل جائیں دروازہ,open door
+بند کردیجئے دروازہ,close door
+کھول دو دروازہ,open door
+بند ہوجانا دروازہ,close door
+بند کردینا دروازہ,close door
+کھل جائیے دروازہ,open door
+بند کردو دروازہ,close door
+کھول دے دروازہ,open door
+کھول دیجئیے دروازہ,open door
+بند ہوجائیں دروازہ,close door
+کھول دیں دروازہ,open door
+بند ہوجائیے دروازہ,close door
+کھڑکی کھول دو,open window
+کھڑکی بند کردو,close window
+کھڑکی کھول ,open window
+کھڑکی بند کر ,close window
+کھڑکی کھول دے ,open window
+کھڑکی بند کردے ,close window
+کھڑکی کھول دیجئیے ,open window
+کھڑکی بند کردیجئے ,close window
+کھڑکی کھول دیں ,open window
+کھڑکی بند کردیں ,close window
+کھڑکی کھل ,open window
+کھڑکی بند ,close window
+کھڑکی کھول دینا ,open window
+کھڑکی بند کردینا ,close window
+کھڑکی کھل جا ,open window
+کھڑکی بند ہوجا ,close window
+کھڑکی کھل جائیں ,open window
+کھڑکی بند ہوجائیں ,close window
+کھڑکی کھل جائیے ,open window
+کھڑکی بند ہوجائیے ,close window
+کھڑکی کھل جانا ,open window
+کھڑکی بند ہوجانا ,close window
+کھول دو کھڑکی,open window
+بند کردو کھڑکی,close window
+کھول کھڑکی,open window
+بند کر کھڑکی,close window
+کھول دے کھڑکی,open window
+بند کردے کھڑکی,close window
+کھول دیجئیے کھڑکی,open window
+بند کردیجئے کھڑکی,close window
+کھول دیں کھڑکی,open window
+بند کردیں کھڑکی,close window
+کھل کھڑکی,open window
+بند کھڑکی,close window
+کھول دینا کھڑکی,open window
+بند کردینا کھڑکی,close window
+کھل جا کھڑکی,open window
+بند ہوجا کھڑکی,close window
+کھل جائیں کھڑکی,open window
+بند ہوجائیں کھڑکی,close window
+کھل جائیے کھڑکی,open window
+بند ہوجائیے کھڑکی,close window
+کھل جانا کھڑکی,open window
+بند ہوجانا کھڑکی,close window
+بند کردیں کھڑکی,close window
+بند ہوجانا کھڑکی,close window
+کھول دیں کھڑکی,open window
+بند کردے کھڑکی,close window
+کھل جائیں کھڑکی,open window
+کھل جا کھڑکی,open window
+کھل جانا کھڑکی,open window
+بند کھڑکی,close window
+بند ہوجائیں کھڑکی,close window
+بند کر کھڑکی,close window
+کھل جائیے کھڑکی,open window
+کھول دو کھڑکی,open window
+کھول دینا کھڑکی,open window
+کھل کھڑکی,open window
+بند کردیجئے کھڑکی,close window
+کھول دے کھڑکی,open window
+بند ہوجائیے کھڑکی,close window
+بند ہوجا کھڑکی,close window
+کھول دیجئیے کھڑکی,open window
+بند کردینا کھڑکی,close window
+بند کردو کھڑکی,close window
+کھول کھڑکی,open window

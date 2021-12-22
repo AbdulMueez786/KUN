@@ -7,12 +7,14 @@ import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Handler;
+import android.speech.RecognizerIntent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -20,12 +22,17 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.example.kunfypproject.Activities.Home;
 import com.example.kunfypproject.Models.Appliance;
 import com.example.kunfypproject.Adapters.home_events_adapter;
 import com.example.kunfypproject.Adapters.home_appliance_adapter;
 import com.example.kunfypproject.Models.NewAppliance;
 import com.example.kunfypproject.R;
 import com.example.kunfypproject.Models.Schedule;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -40,8 +47,8 @@ public class HomeFragment extends Fragment {
     List<Appliance> ls1;
     private home_events_adapter scheduledEventsadapter;
     private home_appliance_adapter appliancecontroladapter;
-    ImageView connection;
 
+    ImageView connection;
     Handler bluetoothIn;
     final int handlerState = 0;        				 //used to identify handler message
     private BluetoothAdapter btAdapter = null;
@@ -58,7 +65,7 @@ public class HomeFragment extends Fragment {
 
     // String for MAC address
     private static String address;
-
+    ImageView btnSpeak;
 
     @Override
     public void onAttach(Activity activity){
@@ -67,48 +74,6 @@ public class HomeFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        //Link the buttons and textViews to respective views
-
-
-        bluetoothIn = new Handler() {
-            public void handleMessage(android.os.Message msg) {
-                if (msg.what == handlerState) {										//if message is what we want
-                    String readMessage = (String) msg.obj;                                                                // msg.arg1 = bytes from connect thread
-                    recDataString.append(readMessage);
-                    Log.d("dataInPrint",recDataString.toString());
-                    int endOfLineIndex = recDataString.indexOf("~");                    // determine the end-of-line
-                    if (endOfLineIndex > 0) {                                           // make sure there data before ~
-                        String dataInPrint = recDataString.substring(0, endOfLineIndex);
-                        //Log.d("dataInPrint",dataInPrint);
-                        int dataLength = dataInPrint.length();
-
-                        if (recDataString.charAt(0) == '#')								//if it starts with # we know it is what we are looking for
-                        {
-                            String data = recDataString.substring(1, endOfLineIndex);
-
-                            Log.d("dataInPrint",data);
-                            Log.d("dataInPrintX",data.substring(2,data.length()));
-                            Log.d("dataInPrintXX",data.substring(0,1));
-                            //Toast.makeText(getApplicationContext(),data,Toast.LENGTH_LONG).show();
-                            if(data.substring(0,1).equalsIgnoreCase("s"))
-                            {
-
-                                //stats.setText("Motor Status: Stopped");
-                            }
-                            else if(data.substring(0,1).equalsIgnoreCase("r"))
-                            {
-                                //stats.setText("Motor Status: Running");
-                            }
-                            //moister.setText("Moister="+data.substring(2,data.length()));// deleted sendoing data
-                        }
-                        recDataString.delete(0, recDataString.length());
-                    }
-
-                    //recDataString.delete(0, recDataString.length());
-                }
-            }
-        };
-
         btAdapter = BluetoothAdapter.getDefaultAdapter();       // get Bluetooth adapter
         checkBTState();
     }
@@ -118,12 +83,59 @@ public class HomeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
        View v= inflater.inflate(R.layout.fragment_home, container, false);
+       /*
+       FirebaseDatabase.getInstance("https://kunfypproject-default-rtdb.firebaseio.com/")
+                .getReference().child("led").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String str=dataSnapshot.getValue(String.class);
+                System.out.println(str);
+                System.out.println("-------------------------------");
+                if(str.matches("ON")){
+                    mConnectedThread3.write("<Light_ON>");
+                    System.out.println("ON");
+                }
+                else {
+                    mConnectedThread3.write("<Light_OFF>");
+                    System.out.println("OFF");
+                }
+            }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
+            }
+        });*/
+        btnSpeak=v.findViewById(R.id.btnSpeak);
+        btnSpeak.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+                //intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
+                //intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, "ur-PK");
+                //if(intent.resolveActivity(getActivity().getPackageManager()) != null){
+                    //((Home)getActivity()).startActivityForResult(intent, 10);
+                try {
+                    ((Home)getActivity()).getSpeechInput(mConnectedThread1);
+                    b();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                System.out.println("--------------ui----------------");
+                    System.out.println(mConnectedThread1);
+
+                //}
+                //else{
+                    //Toast.makeText(this, "Feature not supported in your device!", Toast.LENGTH_SHORT).show();
+                //}
+            }
+        });
         rcv1 = v.findViewById(R.id.h_rcv1);
         rcv1.setHasFixedSize(true);
+
         rcv2 = v.findViewById(R.id.h_rcv2);
         rcv2.setHasFixedSize(true);
+
         connection=v.findViewById(R.id.connection);
         connection.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -134,10 +146,6 @@ public class HomeFragment extends Fragment {
         });
 
         ls= new ArrayList<>();
-        ls.add(new Schedule("Room's Fan on at 7:00 pm on Tuesday","android.resource://com.example.kunfypproject/drawable/fan"));
-        ls.add(new Schedule("Room's Door close at 8:20 pm on Thursday","android.resource://com.example.kunfypproject/drawable/door"));
-        ls.add(new Schedule("Room's window close at 9:00 pm on Friday","android.resource://com.example.kunfypproject/drawable/window"));
-        ls.add(new Schedule("Room's Bulb off at 11:00 pm on Friday","android.resource://com.example.kunfypproject/drawable/bulb"));
 
         ls1 = new ArrayList<>();
         ls1.add(new Appliance("android.resource://com.example.kunfypproject/drawable/fan"));
@@ -153,6 +161,7 @@ public class HomeFragment extends Fragment {
 
         return  v;
     }
+
     @Override
     public void onActivityCreated(Bundle savedInstanceState){
         super.onActivityCreated(savedInstanceState);
@@ -163,16 +172,21 @@ public class HomeFragment extends Fragment {
         super.onStart();
     }
 
+
+
     @Override
     public void onResume(){
+        System.out.println("-----------------Resume-------------------");
         super.onResume();
 
-        //Get MAC address from DeviceListActivity via intent
-        //Intent intent = getIntent();
+
+
         Bundle arg=getArguments();
         //Get the MAC address from the DeviceListActivty via EXTRA
         address = arg.getString("device_address");
-
+        System.out.println("----------------asdd------------------");
+        System.out.println(address);
+        //System.out.println(address);
         //create device and set the MAC address
         BluetoothDevice device = btAdapter.getRemoteDevice(address);
 
@@ -202,8 +216,31 @@ public class HomeFragment extends Fragment {
         mConnectedThread3.start();
         mConnectedThread4 = new ConnectedThread(btSocket);
         mConnectedThread4.start();
+        System.out.println("-------------------+--------------------");
+        System.out.println(mConnectedThread1);
+        /*
+        FirebaseDatabase.getInstance("https://kunfypproject-default-rtdb.firebaseio.com/")
+                .getReference().child("led").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String str=dataSnapshot.getValue(String.class);
+                System.out.println(str);
+                System.out.println("-------------------------------");
+                if(str.matches("ON")){
+                    mConnectedThread3.write("<Light_ON>");
+                    System.out.println("ON");
+                }
+                else {
+                    mConnectedThread3.write("<Light_OFF>");
+                    System.out.println("OFF");
+                }
+            }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
 
+            }
+        });*/
 
         LinearLayoutManager layoutManager1 = new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
         rcv2.setLayoutManager(layoutManager1);
@@ -215,10 +252,84 @@ public class HomeFragment extends Fragment {
         //If it is not an exception will be thrown in the write method and finish() will be called
     }
 
+
     @Override
     public void onSaveInstanceState(Bundle outState){
         super.onSaveInstanceState(outState);
 
+    }
+    void a(){
+        BluetoothDevice device = btAdapter.getRemoteDevice(address);
+
+        try {
+            btSocket = createBluetoothSocket(device);
+        } catch (IOException e) {
+            Toast.makeText(getActivity().getBaseContext(), "Socket creation failed", Toast.LENGTH_LONG).show();
+        }
+        // Establish the Bluetooth socket connection.
+        try
+        {
+            btSocket.connect();
+        } catch (IOException e) {
+            try
+            {
+                btSocket.close();
+            } catch (IOException e2)
+            {
+                //insert code to deal with this
+            }
+        }
+        mConnectedThread1 = new ConnectedThread(btSocket);
+        mConnectedThread1.start();
+        mConnectedThread2 = new ConnectedThread(btSocket);
+        mConnectedThread2.start();
+        mConnectedThread3 = new ConnectedThread(btSocket);
+        mConnectedThread3.start();
+        mConnectedThread4 = new ConnectedThread(btSocket);
+        mConnectedThread4.start();
+        System.out.println("-------------------+--------------------");
+        System.out.println(mConnectedThread1);
+        /*
+        FirebaseDatabase.getInstance("https://kunfypproject-default-rtdb.firebaseio.com/")
+                .getReference().child("led").addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                String str=dataSnapshot.getValue(String.class);
+                System.out.println(str);
+                System.out.println("-------------------------------");
+                if(str.matches("ON")){
+                    mConnectedThread3.write("<Light_ON>");
+                    System.out.println("ON");
+                }
+                else {
+                    mConnectedThread3.write("<Light_OFF>");
+                    System.out.println("OFF");
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });*/
+
+        LinearLayoutManager layoutManager1 = new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false);
+        rcv2.setLayoutManager(layoutManager1);
+        rcv2.setItemAnimator(new DefaultItemAnimator());
+        appliancecontroladapter = new home_appliance_adapter(getActivity(),ls1,mConnectedThread1,mConnectedThread2
+                ,mConnectedThread3,mConnectedThread4);
+        rcv2.setAdapter(appliancecontroladapter);
+        //I send a character when resuming.beginning transmission to check device is connected
+        //If it is not an exception will be thrown in the write method and finish() will be called
+    }
+    void b(){
+        try
+        {
+            //Don't leave Bluetooth sockets open when leaving activity
+            btSocket.close();
+        } catch (IOException e2) {
+            //insert code to deal with this
+        }
     }
 @Override
 public void onPause(){
@@ -249,7 +360,7 @@ public void onPause(){
     }
 
 
-    private BluetoothSocket createBluetoothSocket(BluetoothDevice device) throws IOException {
+    public BluetoothSocket createBluetoothSocket(BluetoothDevice device) throws IOException {
 
         return  device.createRfcommSocketToServiceRecord(BTMODULEUUID);
     }
@@ -285,19 +396,16 @@ public void onPause(){
             mmInStream = tmpIn;
             mmOutStream = tmpOut;
         }
-
-
         public void run() {
             byte[] buffer = new byte[256];
             int bytes;
-
             // Keep looping to listen for received messages
             while (true) {
                 try {
                     bytes = mmInStream.read(buffer);        	//read bytes from input buffer
                     String readMessage = new String(buffer, 0, bytes);
                     // Send the obtained bytes to the UI Activity via handler
-                    bluetoothIn.obtainMessage(handlerState, bytes, -1, readMessage).sendToTarget();
+                    //bluetoothIn.obtainMessage(handlerState, bytes, -1, readMessage).sendToTarget();
                 } catch (IOException e) {
                     break;
                 }
@@ -306,10 +414,9 @@ public void onPause(){
         //write method
         public void write(String input) {
             byte[] msgBuffer = input.getBytes();           //converts entered String into bytes
-            try {
-               /// System.out.println(mmOutStream);
+            try {System.out.println("write function called -------");
+                System.out.println(mmOutStream);
                 mmOutStream.write(msgBuffer);
-
                 //write bytes over BT connection via outstream
             } catch (IOException e) {
                 //if you cannot write, close the application

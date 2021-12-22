@@ -7,10 +7,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.kunfypproject.R;
 import com.example.kunfypproject.Models.Schedule;
 import com.squareup.picasso.Picasso;
@@ -33,8 +31,8 @@ public class home_events_adapter extends RecyclerView.Adapter<home_events_adapte
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        Picasso.get().load(Uri.parse(ls.get(position).getLogo())).into(holder.imageView);
-        holder.textView.setText(ls.get(position).getTitle());
+        Picasso.get().load(Uri.parse(ls.get(position).getStatus())).into(holder.imageView);
+        holder.textView.setText(ls.get(position).getName());
 
     }
 

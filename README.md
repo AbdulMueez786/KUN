@@ -14,7 +14,7 @@ Arduino_Code folder contain Arduino Code.SpeechModel folder contain model code w
 
 
 
-
+This repository was originally created on https://github.com/AbdulMueez786/KUN/ and is now also available here in my secound account: https://github.com/AMG786/KUN/
 
 
 
